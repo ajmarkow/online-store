@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  skip_before_action :authenticate_user!, :only => [:show,:index, :new]
   def index
     # Code for listing all reviews goes here.
     @reviews = Review.all.page params[:page]

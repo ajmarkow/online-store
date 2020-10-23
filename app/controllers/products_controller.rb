@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  skip_before_action :authenticate_user!, :only => [:show,:index]
   def index
     # Code for listing all reviews goes here.
     @products = Product.all.page params[:page]
@@ -6,6 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def new
+    
     # Code for new review form goes here.
     @product = Product.new
     render :new
