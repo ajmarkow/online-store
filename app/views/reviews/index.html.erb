@@ -1,0 +1,17 @@
+<h2> Welcome to the reviews section of Latte Larry's</h2>
+<h4>We have whatever you want "You know, whatever you want, some vanilla bullshit latte cappa thing.''</h4>
+<h4>-Larry David, Founder</h4>
+
+<% if @reviews.any? %>
+<h4>Reviews of our Fine Products and Excellent Beans from our customers like:</h4>
+<% @reviews.each do |review| %>
+•<%= link_to review.author, review_path(review) %>
+<hr>
+<br>
+<% end %>
+<% else %>
+  <p>No one has reviewed anything yet, but our beans and scones are pretty, pretty, pretty good.</p>
+  <% end %>
+  <em class='warning'> Latte Larry's Customers and Employees Only, Not for Mocha Joe!</em>
+  <p><%= link_to "Add a new review", new_review_path %></p>
+  <%= link_to "Back to our Homepage", root_path %>

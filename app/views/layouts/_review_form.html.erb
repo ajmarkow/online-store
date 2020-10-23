@@ -1,0 +1,19 @@
+<%= render "layouts/errors", :object => @review %>
+<div class='videowrapper'>
+<%= form_for @review do |f| %>
+<%= f.label "Review For" %>
+<%= f.collection_select :product_id, Product.order(:name), :id, :name, include_blank: false %>
+<hr>
+<br>
+<%= f.label :author %>
+<%= f.text_field :author %>
+<hr>
+<%= f.label :content_body %>
+<%= f.text_field :content_body %>
+<hr>
+<%= f.label :rating %>
+<%= f.number_field :rating, in: 1..5 %>
+<br>
+<%= f.submit %>
+</div>
+<% end %>

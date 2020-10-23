@@ -1,0 +1,6 @@
+<% if object.errors.any? %>
+<h2 class="warning">You'll have to clear up these issues before we can save the changes.</h2>
+<% object.errors.full_messages.each do |message| %>
+<p>•<%= message %></p>
+<% end %>
+<% end %>

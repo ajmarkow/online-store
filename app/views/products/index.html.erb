@@ -1,0 +1,17 @@
+<h2> Welcome to the products section of Latte Larry's</h2>
+<h4>We have whatever you want "You know, whatever you want, some vanilla bullshit latte cappa thing.''</h4>
+<h4>-Larry David, Founder</h4>
+
+<% if @products.any? %>
+<h4>Products Available Now:</h4>
+<% @products.each do |product| %>
+•<%= link_to product.name, product_path(product) %>
+<hr>
+<br>
+<% end %>
+<% else %>
+  <p>We're all out of scones and other items right now.  When we have them back, they won't be soft scones, like Mocha Joe's sells.</p>
+  <% end %>
+  <em class='warning'> Latte Larry's Employees Only, Not for Mocha Joe!</em>
+  <p><%= link_to "Add a new product", new_product_path %></p>
+  <%= link_to "Back to our Homepage", root_path %>
