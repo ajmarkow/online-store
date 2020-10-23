@@ -31,17 +31,18 @@ form {
   text-align: center;
   align: center;
 }
-.videowrapper {
+.videowrapper,
+.centered {
   margin-left: 20%;
   margin-right: 20%;
   align: center;
   text-align: center;
 }
 .login {
-  padding-left: 45%;
+  padding-left: 35%;
   padding-right: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: left;
 }
 h1,
@@ -50,9 +51,9 @@ h4,
 h3 {
   text-align: center;
 }
-.centered {
-  margin-left: 20%;
-  margin-right: 20%;
-  align: center;
-  text-align: center;
+a:visited {
+  color: black;
+}
+a {
+  color: #202c64;
 }
