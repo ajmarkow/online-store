@@ -10,11 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class='centered'>
   <% if current_user %>
   <%=current_user.email%> is signed into lattelarrys.com | <%=link_to "Sign out of lattelarrys.com",destroy_user_session_path, :method => :delete%>
   <%else%>
   <%=link_to "Create a Latte Larry's Account", '/users/sign_up' %> | <%=link_to "Sign in to Latte Larry's" , '/users/sign_in'%>
   <% end%>
+    </div>
   <div class='logo'>
   <%= image_tag "path36.png" %>
   </div>

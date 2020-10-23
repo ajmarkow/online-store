@@ -50,3 +50,9 @@ h4,
 h3 {
   text-align: center;
 }
+.centered {
+  margin-left: 20%;
+  margin-right: 20%;
+  align: center;
+  text-align: center;
+}
