@@ -1,0 +1,21 @@
+<div class='videowrapper'>
+<h1>Review Author: </h1>
+<h3>•<%= @review.author %></h3>
+<br>
+<h2>Their Review: </h2>
+<h3>•<%= @review.content_body %></h3>
+<br>
+<h2>Their Rating:</h2>
+<h3> •<%= @review.rating %></h3>
+<h2>The product</h2>
+•<%= link_to "product", products_path(@review.product_id) %>
+<p><%= link_to "Edit", edit_review_path(@review) %></p>
+<p><%= link_to "Delete", review_path(@review),
+               :data => { :confirm => "You're about to delete this review.  Does that sound Prett-Ay, Prett-Ay, Prett-Ay Good.?",
+                          :method => "delete" } %></p>
+<h4>The Product:</h4>
+<%= link_to "Product", product_path(@review.product_id) %>
+</p>
+                          <p><%= link_to "Back to our reviews! We have the finest beans.", reviews_path %></p>
+  </div>                        
+:erb

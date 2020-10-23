@@ -1,0 +1,27 @@
+<div class='videowrapper'>
+<%= link_to "Products", products_path %>         
+<%= link_to "Reviews", reviews_path %>
+<hr>
+<iframe width="557" height="318" src="https://www.youtube.com/embed/o_O4Y75Rz04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<% if @products.any? %>
+<h4>Our 3 newest products:</h4>
+<% @products.each do |product| %>
+•<%= link_to product.name, product_path(product) %>
+<hr>
+<br>
+<% end %>
+<% else %>
+  <p>We're all out of beans right now.  Mocha Joe stole our beans!</p>
+  <% end %>
+  <br>
+  <% if @reviews.any? %>
+<h4>Our 3 top rated reviews from our customers:</h4>
+<% @reviews.each do |review| %>
+•<%= link_to review.author, reviews_path(review) %>
+<hr>
+<br>
+<% end %>
+<% else %>
+  <p>Please eview our coffee or food, unless you're Mocha Joe!</p>
+  <% end %>
+</div>
