@@ -1,0 +1,16 @@
+<div class='videowrapper'>
+<h1>Product Name: </h1>
+<h3>•<%= @product.name %></h3>
+<br>
+<h2>Product Price: </h2>
+<h3>•<%= number_to_currency(@product.cost)%></h3>
+<br>
+<h2>Country of Origin:</h2>
+<h3> •<%= @product.country_of_origin %></h3>
+
+<p><%= link_to "Edit", edit_product_path(@product) %></p>
+<p><%= link_to "Delete", product_path(@product),
+               :data => { :confirm => "You're about to delete this product.  Does that sound Prett-Ay, Prett-Ay, Prett-Ay Good.?",
+                          :method => "delete" } %></p>
+                          <p><%= link_to "Back to our products! We have the finest beans.", products_path %></p>
+  </div>                        

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latte Larry's</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  <%= favicon_link_tag asset_path("favicon.png") %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <% if current_user %>
+  <%=current_user.email%> is signed into lattelarrys.com | <%=link_to "Sign out of lattelarrys.com",destroy_user_session_path, :method => :delete%>
+  <%else%>
+  <%=link_to "Create a Latte Larry's Account", '/users/sign_up' %> | <%=link_to "Sign in to Latte Larry's" , '/users/sign_in'%>
+  <% end%>
+  <div class='logo'>
+  <%= image_tag "path36.png" %>
+  </div>
+    <%= yield %>
+  </body>
+</html>
