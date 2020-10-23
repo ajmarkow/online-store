@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
     # Code for listing all reviews goes here.
-    @products = Product.all
+    @products = Product.all.page params[:page]
     render :index
   end
 

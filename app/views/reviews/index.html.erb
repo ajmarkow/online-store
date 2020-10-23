@@ -12,6 +12,7 @@
 <% else %>
   <p>No one has reviewed anything yet, but our beans and scones are pretty, pretty, pretty good.</p>
   <% end %>
+    <%= paginate @reviews%>
   <em class='warning'> Latte Larry's Customers and Employees Only, Not for Mocha Joe!</em>
   <p><%= link_to "Add a new review", new_review_path %></p>
   <%= link_to "Back to our Homepage", root_path %>
