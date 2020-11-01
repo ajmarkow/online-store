@@ -1,5 +1,10 @@
 class ReviewsController < ApplicationController
-  skip_before_action :authenticate_user!, :only => [:show,:index, :new]
+  before_action :only => [:create] do
+    redirect_to new_user_session_path unless current_user
+  end
+  before_action :except => [:update,:destroy] do
+    redirect_to new_user_session_path unless current_user && current_user.admin?
+  end
   def index
     # Code for listing all reviews goes here.
     @reviews = Review.all.page params[:page]
@@ -32,7 +37,7 @@ class ReviewsController < ApplicationController
   def show
     # Code for showing a single review goes here.
     @review = Review.find(params[:id])
-    @product=Product.find(@review.product_id)
+    @product = Product.find(@review.product_id)
     render :show
   end
 
@@ -62,6 +67,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:author, :content_body, :rating, :review_id)
+    params.require(:review).permit(:author, :content_body, :rating, :product_id)
   end
 end
