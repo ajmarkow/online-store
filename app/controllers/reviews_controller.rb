@@ -1,10 +1,9 @@
 class ReviewsController < ApplicationController
-  before_action :only => [:create] do
-    redirect_to new_user_session_path unless current_user
-  end
-  before_action :except => [:update,:destroy] do
-    redirect_to new_user_session_path unless current_user && current_user.admin?
-  end
+  skip_before_action :authenticate_user!, :except => [:index, :show]
+    before_action :only => [:update,:destroy] do
+      redirect_to root_path, notice: "You can't do that. Latte Larry's Employees and Admins Only" unless current_user && current_user.admin?
+    end
+
   def index
     # Code for listing all reviews goes here.
     @reviews = Review.all.page params[:page]

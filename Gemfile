@@ -54,8 +54,8 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "inline_svg"
 
 group :test do
-  gem "shoulda-matchers"
   gem "simplecov", require: false
+  gem "shoulda-matchers"
 end
 #Add faker for seeding database.
 gem "faker"
