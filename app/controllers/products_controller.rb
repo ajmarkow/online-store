@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  skip_before_action :authenticate_user!, :only => [:show,:index]
+  +  before_action :current_user.admin?, :except => [:index, :show]  
   def index
     # Code for listing all reviews goes here.
     @products = Product.all.page params[:page]

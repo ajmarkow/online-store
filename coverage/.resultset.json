@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/features/add_product_pages_spec.rb": {
+      "C:/Users/alexa/Desktop/online-store/spec/features/add_product_pages_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,16 +9,16 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/rails_helper.rb": {
+      "C:/Users/alexa/Desktop/online-store/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -94,7 +94,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/environment.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -103,7 +103,7 @@
           1
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/application.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/application.rb": {
         "lines": [
           1,
           null,
@@ -142,7 +142,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/boot.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -150,7 +150,7 @@
           1
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/environments/test.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -202,7 +202,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/application_controller_renderer.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -214,7 +214,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/assets.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -232,7 +232,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/backtrace_silencers.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -243,7 +243,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/content_security_policy.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -277,7 +277,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/cookies_serializer.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -286,7 +286,7 @@
           1
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/devise.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -601,7 +601,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/filter_parameter_logging.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -609,7 +609,7 @@
           1
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/inflections.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -629,7 +629,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/mime_types.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -637,7 +637,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/initializers/wrap_parameters.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -655,7 +655,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/config/routes.rb": {
+      "C:/Users/alexa/Desktop/online-store/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -666,9 +666,47 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/models/user.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/models/user.rb": {
         "lines": [
           1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "C:/Users/alexa/Desktop/online-store/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/alexa/Desktop/online-store/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/alexa/Desktop/online-store/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/alexa/Desktop/online-store/app/controllers/landing_page_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          null,
+          0,
           null,
           null,
           1,
@@ -676,56 +714,28 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/models/application_record.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/controllers/products_controller.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/controllers/application_controller.rb": {
-        "lines": [
           1,
-          null
-        ]
-      },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/controllers/landing_page_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
           null,
           0,
-          null,
-          null
-        ]
-      },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/controllers/products_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          3,
-          3,
+          0,
           null,
           null,
           1,
           null,
-          2,
-          2,
+          null,
+          0,
+          0,
           null,
           null,
           1,
           null,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
           0,
           null,
@@ -767,57 +777,19 @@
           1,
           null,
           1,
-          2,
+          0,
           null,
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/controllers/reviews_controller.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/controllers/reviews_controller.rb": {
         "lines": [
           1,
           1,
-          null,
-          2,
-          2,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
           1,
           null,
           0,
           0,
-          null,
-          null,
-          1,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
           null,
           null,
           1,
@@ -831,17 +803,57 @@
           null,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
           null,
           null,
           1,
           null,
           1,
-          1,
+          0,
           null,
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/jobs/application_job.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/jobs/application_job.rb": {
         "lines": [
           1,
           null,
@@ -852,7 +864,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/mailers/application_mailer.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/mailers/application_mailer.rb": {
         "lines": [
           1,
           1,
@@ -860,7 +872,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/models/product.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/models/product.rb": {
         "lines": [
           1,
           1,
@@ -868,13 +880,14 @@
           1,
           1,
           1,
-          2,
+          0,
           null,
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/models/review.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/models/review.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -883,15 +896,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/channels/application_cable/channel.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/app/channels/application_cable/connection.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/channels/application_cable/channel.rb": {
         "lines": [
           1,
           1,
@@ -899,7 +904,15 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/features/add_review_pages_spec.rb": {
+      "C:/Users/alexa/Desktop/online-store/app/channels/application_cable/connection.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/alexa/Desktop/online-store/spec/features/add_review_pages_spec.rb": {
         "lines": [
           1,
           null,
@@ -907,22 +920,22 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/models/product_spec.rb": {
+      "C:/Users/alexa/Desktop/online-store/spec/models/product_spec.rb": {
         "lines": [
           1,
           null,
@@ -934,7 +947,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/models/review_spec.rb": {
+      "C:/Users/alexa/Desktop/online-store/spec/models/review_spec.rb": {
         "lines": [
           1,
           null,
@@ -947,7 +960,7 @@
           null
         ]
       },
-      "C:/Users/alexa/Desktop/online store pre lunch commit/spec/models/user_spec.rb": {
+      "C:/Users/alexa/Desktop/online-store/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -960,6 +973,6 @@
         ]
       }
     },
-    "timestamp": 1603492202
+    "timestamp": 1604244040
   }
 }
