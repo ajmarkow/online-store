@@ -1,4 +1,10 @@
 <div class='videowrapper'>
+<% if flash[:notice]%>
+<em><%=flash[:notice]%></em>
+<br>
+<br>
+<br>
+<%end%>
 <%= link_to "Products", products_path %>         
 <%= link_to "Reviews", reviews_path %>
 <hr>
