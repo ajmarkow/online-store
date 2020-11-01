@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
-  +  before_action :current_user.admin?, :except => [:index, :show]  
+  before_action :except => [:index, :show] do
+    redirect_to new_user_session_path unless current_user && current_user.admin?
+  end
+
   def index
     # Code for listing all reviews goes here.
     @products = Product.all.page params[:page]
@@ -7,7 +10,7 @@ class ProductsController < ApplicationController
   end
 
   def new
-    
+
     # Code for new review form goes here.
     @product = Product.new
     render :new
@@ -56,6 +59,7 @@ class ProductsController < ApplicationController
     @product = Product.find(id.to_i)
     render :show
   end
+
   private
 
   def product_params
