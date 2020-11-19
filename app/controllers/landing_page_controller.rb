@@ -6,6 +6,5 @@ class LandingPageController < ApplicationController
     @reviews = Review.top3
   end
 
-  def not_authorized
-  end
+  def not_authorized; end
 end
