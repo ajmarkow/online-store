@@ -57,7 +57,7 @@ class ReviewsController < ApplicationController
     redirect_to reviews_path
   end
 
-  def find(id)
+  def find(_id)
     # Code for showing a single review goes here.
     @product = Review.find(self.product_id)
     render(:product)
