@@ -1,13 +1,19 @@
 { pkgs, ... }:
 
 {
-  # Disable cachix to avoid evaluation errors when caches are unreachable
-  cachix.enable = false;
+  # Native extension build dependencies
+  packages = [
+    pkgs.postgresql
+    pkgs.zlib
+    pkgs.libffi
+    pkgs.libyaml
+    pkgs.pkg-config
+  ];
 
   languages.ruby = {
     enable = true;
-    # nixpkgs-ruby has 2.6.9 (2.6.6 not available); 2.6.9 is compatible with Gemfile's 2.6.6
-    version = "2.6.9";
+    version = "3.2.2";
     bundler.enable = true;
+    lsp.enable = false;
   };
 }

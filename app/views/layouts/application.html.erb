@@ -5,14 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
   <%= favicon_link_tag asset_path("favicon.png") %>
-    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
-    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class='centered'>
   <% if current_user %>
-  <%=current_user.email%> is signed into lattelarrys.com | <%=link_to "Sign out of lattelarrys.com",destroy_user_session_path, :method => :delete%>
+  <%=current_user.email%> is signed into lattelarrys.com | <%= link_to "Sign out of lattelarrys.com", destroy_user_session_path, data: { turbo_method: :delete } %>
   <%else%>
   <%=link_to "Create a Latte Larry's Account", '/users/sign_up' %> | <%=link_to "Sign in to Latte Larry's" , '/users/sign_in'%>
   <% end%>
