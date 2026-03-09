@@ -14,14 +14,16 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+# Development: Set DB_USERNAME and DB_PASSWORD in .env (or leave DB_PASSWORD unset for trust auth)
+#
 default: &default
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: REDACTED
+  username: <%= ENV.fetch("DB_USERNAME", "postgres") %>
+  password: <%= ENV["DB_PASSWORD"] %>
 
 development:
   <<: *default
@@ -80,8 +82,15 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# Production uses Elastic Beanstalk RDS environment variables when DB is coupled.
+# See: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Ruby.rds.html#ruby-rds-create
 production:
   <<: *default
-  database: online_store_production
-  username: online_store
-  password: <%= ENV['ONLINE_STORE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
