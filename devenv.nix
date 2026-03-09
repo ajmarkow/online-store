@@ -12,7 +12,7 @@
 
   languages.ruby = {
     enable = true;
-    version = "3.2.2";
+    version = "3.2.8";
     bundler.enable = true;
     lsp.enable = false;
   };
